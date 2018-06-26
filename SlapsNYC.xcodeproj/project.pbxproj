@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		810469B720DC4E4E00C61288 /* HandballCourts.json in Resources */ = {isa = PBXBuildFile; fileRef = 810469B620DC4E4E00C61288 /* HandballCourts.json */; };
+		810469BA20DC52A700C61288 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810469B920DC52A700C61288 /* Parks.swift */; };
+		810469BE20DCB59500C61288 /* ParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810469BD20DCB59500C61288 /* ParkTableViewCell.swift */; };
+		8117120420E0A6BA0063BBFD /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117120320E0A6BA0063BBFD /* StyleSheet.swift */; };
+		8117120620E0A7030063BBFD /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8117120520E0A7030063BBFD /* UIColorExt.swift */; };
+		813A104C20C5E02B001F6912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A104B20C5E02B001F6912 /* AppDelegate.swift */; };
+		813A104E20C5E02B001F6912 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A104D20C5E02B001F6912 /* HomeViewController.swift */; };
+		813A105120C5E02B001F6912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813A104F20C5E02B001F6912 /* Main.storyboard */; };
+		813A105320C5E02B001F6912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813A105220C5E02B001F6912 /* Assets.xcassets */; };
+		813A105620C5E02B001F6912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813A105420C5E02B001F6912 /* LaunchScreen.storyboard */; };
+		813A106120C5E02B001F6912 /* SlapsNYCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A106020C5E02B001F6912 /* SlapsNYCTests.swift */; };
+		813A106C20C5E02B001F6912 /* SlapsNYCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A106B20C5E02B001F6912 /* SlapsNYCUITests.swift */; };
+		813A107B20C5F4C1001F6912 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A107A20C5F4C1001F6912 /* CustomSegmentedControl.swift */; };
+		813A107D20C5F51D001F6912 /* FindAParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A107C20C5F51D001F6912 /* FindAParkViewController.swift */; };
+		813A108020C5F717001F6912 /* CustomCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A107F20C5F717001F6912 /* CustomCards.swift */; };
+		81F294DC20D2055C0095241E /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F294DB20D2055C0095241E /* ParkDetailViewController.swift */; };
+		81F294DE20D2058A0095241E /* TournamentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F294DD20D2058A0095241E /* TournamentDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		813A105D20C5E02B001F6912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813A104020C5E02B001F6912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813A104720C5E02B001F6912;
+			remoteInfo = SlapsNYC;
+		};
+		813A106820C5E02B001F6912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813A104020C5E02B001F6912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813A104720C5E02B001F6912;
+			remoteInfo = SlapsNYC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		810469B620DC4E4E00C61288 /* HandballCourts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HandballCourts.json; sourceTree = "<group>"; };
+		810469B920DC52A700C61288 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
+		810469BD20DCB59500C61288 /* ParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewCell.swift; sourceTree = "<group>"; };
+		8117120320E0A6BA0063BBFD /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
+		8117120520E0A7030063BBFD /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		813A104820C5E02B001F6912 /* SlapsNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlapsNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A104B20C5E02B001F6912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		813A104D20C5E02B001F6912 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		813A105020C5E02B001F6912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		813A105220C5E02B001F6912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		813A105520C5E02B001F6912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		813A105720C5E02B001F6912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813A105C20C5E02B001F6912 /* SlapsNYCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlapsNYCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A106020C5E02B001F6912 /* SlapsNYCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlapsNYCTests.swift; sourceTree = "<group>"; };
+		813A106220C5E02B001F6912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813A106720C5E02B001F6912 /* SlapsNYCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlapsNYCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A106B20C5E02B001F6912 /* SlapsNYCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlapsNYCUITests.swift; sourceTree = "<group>"; };
+		813A106D20C5E02B001F6912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813A107A20C5F4C1001F6912 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		813A107C20C5F51D001F6912 /* FindAParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAParkViewController.swift; sourceTree = "<group>"; };
+		813A107F20C5F717001F6912 /* CustomCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCards.swift; sourceTree = "<group>"; };
+		81F294DB20D2055C0095241E /* ParkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
+		81F294DD20D2058A0095241E /* TournamentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		813A104520C5E02B001F6912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813A105920C5E02B001F6912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813A106420C5E02B001F6912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		810469B820DC529900C61288 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				810469B920DC52A700C61288 /* Parks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		810469BB20DC52F500C61288 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				813A104D20C5E02B001F6912 /* HomeViewController.swift */,
+				813A107C20C5F51D001F6912 /* FindAParkViewController.swift */,
+				81F294DB20D2055C0095241E /* ParkDetailViewController.swift */,
+				81F294DD20D2058A0095241E /* TournamentDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		810469BC20DC531A00C61288 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				813A107E20C5F6C8001F6912 /* CustomViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		813A103F20C5E02B001F6912 = {
+			isa = PBXGroup;
+			children = (
+				813A104A20C5E02B001F6912 /* SlapsNYC */,
+				813A105F20C5E02B001F6912 /* SlapsNYCTests */,
+				813A106A20C5E02B001F6912 /* SlapsNYCUITests */,
+				813A104920C5E02B001F6912 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		813A104920C5E02B001F6912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				813A104820C5E02B001F6912 /* SlapsNYC.app */,
+				813A105C20C5E02B001F6912 /* SlapsNYCTests.xctest */,
+				813A106720C5E02B001F6912 /* SlapsNYCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		813A104A20C5E02B001F6912 /* SlapsNYC */ = {
+			isa = PBXGroup;
+			children = (
+				810469BD20DCB59500C61288 /* ParkTableViewCell.swift */,
+				810469B820DC529900C61288 /* Model */,
+				810469BB20DC52F500C61288 /* Controller */,
+				810469BC20DC531A00C61288 /* View */,
+				813A107920C5E04F001F6912 /* Supporting Files */,
+				813A104F20C5E02B001F6912 /* Main.storyboard */,
+				813A105720C5E02B001F6912 /* Info.plist */,
+			);
+			path = SlapsNYC;
+			sourceTree = "<group>";
+		};
+		813A105F20C5E02B001F6912 /* SlapsNYCTests */ = {
+			isa = PBXGroup;
+			children = (
+				813A106020C5E02B001F6912 /* SlapsNYCTests.swift */,
+				813A106220C5E02B001F6912 /* Info.plist */,
+			);
+			path = SlapsNYCTests;
+			sourceTree = "<group>";
+		};
+		813A106A20C5E02B001F6912 /* SlapsNYCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				813A106B20C5E02B001F6912 /* SlapsNYCUITests.swift */,
+				813A106D20C5E02B001F6912 /* Info.plist */,
+			);
+			path = SlapsNYCUITests;
+			sourceTree = "<group>";
+		};
+		813A107920C5E04F001F6912 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				810469B620DC4E4E00C61288 /* HandballCourts.json */,
+				813A104B20C5E02B001F6912 /* AppDelegate.swift */,
+				813A105420C5E02B001F6912 /* LaunchScreen.storyboard */,
+				813A105220C5E02B001F6912 /* Assets.xcassets */,
+				8117120320E0A6BA0063BBFD /* StyleSheet.swift */,
+				8117120520E0A7030063BBFD /* UIColorExt.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		813A107E20C5F6C8001F6912 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				813A107A20C5F4C1001F6912 /* CustomSegmentedControl.swift */,
+				813A107F20C5F717001F6912 /* CustomCards.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		813A104720C5E02B001F6912 /* SlapsNYC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813A107020C5E02B001F6912 /* Build configuration list for PBXNativeTarget "SlapsNYC" */;
+			buildPhases = (
+				813A104420C5E02B001F6912 /* Sources */,
+				813A104520C5E02B001F6912 /* Frameworks */,
+				813A104620C5E02B001F6912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlapsNYC;
+			productName = SlapsNYC;
+			productReference = 813A104820C5E02B001F6912 /* SlapsNYC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813A105B20C5E02B001F6912 /* SlapsNYCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813A107320C5E02B001F6912 /* Build configuration list for PBXNativeTarget "SlapsNYCTests" */;
+			buildPhases = (
+				813A105820C5E02B001F6912 /* Sources */,
+				813A105920C5E02B001F6912 /* Frameworks */,
+				813A105A20C5E02B001F6912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813A105E20C5E02B001F6912 /* PBXTargetDependency */,
+			);
+			name = SlapsNYCTests;
+			productName = SlapsNYCTests;
+			productReference = 813A105C20C5E02B001F6912 /* SlapsNYCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		813A106620C5E02B001F6912 /* SlapsNYCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813A107620C5E02B001F6912 /* Build configuration list for PBXNativeTarget "SlapsNYCUITests" */;
+			buildPhases = (
+				813A106320C5E02B001F6912 /* Sources */,
+				813A106420C5E02B001F6912 /* Frameworks */,
+				813A106520C5E02B001F6912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813A106920C5E02B001F6912 /* PBXTargetDependency */,
+			);
+			name = SlapsNYCUITests;
+			productName = SlapsNYCUITests;
+			productReference = 813A106720C5E02B001F6912 /* SlapsNYCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		813A104020C5E02B001F6912 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = C4Q;
+				TargetAttributes = {
+					813A104720C5E02B001F6912 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					813A105B20C5E02B001F6912 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 813A104720C5E02B001F6912;
+					};
+					813A106620C5E02B001F6912 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 813A104720C5E02B001F6912;
+					};
+				};
+			};
+			buildConfigurationList = 813A104320C5E02B001F6912 /* Build configuration list for PBXProject "SlapsNYC" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 813A103F20C5E02B001F6912;
+			productRefGroup = 813A104920C5E02B001F6912 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				813A104720C5E02B001F6912 /* SlapsNYC */,
+				813A105B20C5E02B001F6912 /* SlapsNYCTests */,
+				813A106620C5E02B001F6912 /* SlapsNYCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		813A104620C5E02B001F6912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813A105620C5E02B001F6912 /* LaunchScreen.storyboard in Resources */,
+				810469B720DC4E4E00C61288 /* HandballCourts.json in Resources */,
+				813A105320C5E02B001F6912 /* Assets.xcassets in Resources */,
+				813A105120C5E02B001F6912 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813A105A20C5E02B001F6912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813A106520C5E02B001F6912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		813A104420C5E02B001F6912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810469BE20DCB59500C61288 /* ParkTableViewCell.swift in Sources */,
+				8117120420E0A6BA0063BBFD /* StyleSheet.swift in Sources */,
+				81F294DE20D2058A0095241E /* TournamentDetailViewController.swift in Sources */,
+				813A104E20C5E02B001F6912 /* HomeViewController.swift in Sources */,
+				81F294DC20D2055C0095241E /* ParkDetailViewController.swift in Sources */,
+				813A108020C5F717001F6912 /* CustomCards.swift in Sources */,
+				813A107B20C5F4C1001F6912 /* CustomSegmentedControl.swift in Sources */,
+				813A104C20C5E02B001F6912 /* AppDelegate.swift in Sources */,
+				8117120620E0A7030063BBFD /* UIColorExt.swift in Sources */,
+				813A107D20C5F51D001F6912 /* FindAParkViewController.swift in Sources */,
+				810469BA20DC52A700C61288 /* Parks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813A105820C5E02B001F6912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813A106120C5E02B001F6912 /* SlapsNYCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813A106320C5E02B001F6912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813A106C20C5E02B001F6912 /* SlapsNYCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		813A105E20C5E02B001F6912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813A104720C5E02B001F6912 /* SlapsNYC */;
+			targetProxy = 813A105D20C5E02B001F6912 /* PBXContainerItemProxy */;
+		};
+		813A106920C5E02B001F6912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813A104720C5E02B001F6912 /* SlapsNYC */;
+			targetProxy = 813A106820C5E02B001F6912 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		813A104F20C5E02B001F6912 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813A105020C5E02B001F6912 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		813A105420C5E02B001F6912 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813A105520C5E02B001F6912 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		813A106E20C5E02B001F6912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		813A106F20C5E02B001F6912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		813A107120C5E02B001F6912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlapsNYC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.AC4.3.SlapsNYC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		813A107220C5E02B001F6912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlapsNYC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.AC4.3.SlapsNYC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		813A107420C5E02B001F6912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlapsNYCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.AC4.3.SlapsNYCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlapsNYC.app/SlapsNYC";
+			};
+			name = Debug;
+		};
+		813A107520C5E02B001F6912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlapsNYCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.AC4.3.SlapsNYCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlapsNYC.app/SlapsNYC";
+			};
+			name = Release;
+		};
+		813A107720C5E02B001F6912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlapsNYCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.AC4.3.SlapsNYCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlapsNYC;
+			};
+			name = Debug;
+		};
+		813A107820C5E02B001F6912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlapsNYCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.AC4.3.SlapsNYCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlapsNYC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		813A104320C5E02B001F6912 /* Build configuration list for PBXProject "SlapsNYC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813A106E20C5E02B001F6912 /* Debug */,
+				813A106F20C5E02B001F6912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813A107020C5E02B001F6912 /* Build configuration list for PBXNativeTarget "SlapsNYC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813A107120C5E02B001F6912 /* Debug */,
+				813A107220C5E02B001F6912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813A107320C5E02B001F6912 /* Build configuration list for PBXNativeTarget "SlapsNYCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813A107420C5E02B001F6912 /* Debug */,
+				813A107520C5E02B001F6912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813A107620C5E02B001F6912 /* Build configuration list for PBXNativeTarget "SlapsNYCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813A107720C5E02B001F6912 /* Debug */,
+				813A107820C5E02B001F6912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 813A104020C5E02B001F6912 /* Project object */;
+}
