@@ -11,21 +11,16 @@ import UIKit
 class ParkDetailViewController: UIViewController {
     
     var park: Parks!
-    var selectedSegmentIndex = 0
     
-    var parkName: String!
-    var numOfCourts: String!
-    var parkAddress: String!
-    var parkLat: String!
-    var parkLon: String!
+    //For the segmented controller
+    var selectedSegmentIndex = 0
     
     //Top View Outlets
     @IBOutlet weak var numberOfCourtsLabel: UILabel!
     @IBOutlet weak var parkAddressLabel: UILabel!
     @IBOutlet weak var navigateButton: UIButton!
-    //Custom Segmented Control Outlet
+    //Custom Segmented Control
     @IBOutlet weak var customSegmentedControl: CustomSegmentedControl!
-    
     //Bottom View Outlets
     @IBOutlet weak var tournamentsTableView: UITableView!
     
@@ -35,9 +30,9 @@ class ParkDetailViewController: UIViewController {
     }
     
     func configureLabels() {
-        numberOfCourtsLabel.text = numOfCourts
-        parkAddressLabel.text = parkAddress
-    }
+        numberOfCourtsLabel.text = park.Num_of_Courts ?? "N/A"
+        parkAddressLabel.text = park.Location ?? "Address Unknown"
+        }
     
     
     @IBAction func customSegmentedValueChanged(_ sender: CustomSegmentedControl) {

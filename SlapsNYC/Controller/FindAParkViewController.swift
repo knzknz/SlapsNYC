@@ -8,20 +8,20 @@
 
 import UIKit
 
+
 class FindAParkViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var parks = [Parks]()
+    var park: Parks!
+    
+    var allParks = [Parks]()
     var queensParks = [Parks]()
     var brooklynParks = [Parks]()
     var manhattanParks = [Parks]()
     var statenIslandParks = [Parks]()
     var bronxParks = [Parks]()
-    
-    var parkNameToPass = ""
-    var parkAddressToPass = ""
-    var numberOfCourtsToPass = ""
-    var parkLatToPass = ""
-    var parkLonToPass = ""
+    //To help load the right park in detail VC
+    var selectedBorough = [Parks]()
+    var currentIndex: Int!
 
     @IBOutlet weak var customSegmentedControl: CustomSegmentedControl!
     @IBOutlet weak var boroughLabel: UILabel!
@@ -32,19 +32,19 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
         myTableView.dataSource = self
         myTableView.delegate = self
         myTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
-        
+
         loadParkData()
         loadParksByBorough()
         
         //to test the data is there
-//        for park in parks {
+//        for park in allParks {
 //            print(park.Name)
 //        }
     }
     
     func loadParksByBorough() {
         
-        for park in parks {
+        for park in allParks {
             if park.Prop_ID?.first == "Q" {
                 queensParks.append(park)
             } else if park.Prop_ID?.first == "B" {
@@ -68,7 +68,7 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
                 let myDecoder = JSONDecoder()
                 do {
                     let decodedParkData = try myDecoder.decode([Parks].self, from: data)
-                    self.parks = decodedParkData
+                    self.allParks = decodedParkData
                 }
                 catch let error {
                     print(error)
@@ -113,49 +113,39 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
         
         switch customSegmentedControl.selectedSegmentIndex {
         case 0:
-            let park = queensParks[indexPath.row]
+            park = queensParks[indexPath.row]
+            selectedBorough = queensParks
             cell.parkNameLabel.text = park.Name
             cell.parkAddressLabel.text = park.Location
             cell.numberOfCourtsLabel.text = park.Num_of_Courts
-            numberOfCourtsToPass = park.Num_of_Courts!
-            parkAddressToPass = park.Location!
-            parkNameToPass = park.Name!
             
         case 1:
-            let park = brooklynParks[indexPath.row]
+            park = brooklynParks[indexPath.row]
+            selectedBorough = brooklynParks
             cell.parkNameLabel.text = park.Name
             cell.parkAddressLabel.text = park.Location
             cell.numberOfCourtsLabel.text = park.Num_of_Courts
-            numberOfCourtsToPass = park.Num_of_Courts!
-            parkAddressToPass = park.Location!
-            parkNameToPass = park.Name!
 
         case 2:
-            let park = manhattanParks[indexPath.row]
+            park = manhattanParks[indexPath.row]
+            selectedBorough = manhattanParks
             cell.parkNameLabel.text = park.Name
             cell.parkAddressLabel.text = park.Location
             cell.numberOfCourtsLabel.text = park.Num_of_Courts
-            numberOfCourtsToPass = park.Num_of_Courts!
-            parkAddressToPass = park.Location!
-            parkNameToPass = park.Name!
 
         case 3:
-            let park = statenIslandParks[indexPath.row]
+            park = statenIslandParks[indexPath.row]
+            selectedBorough = statenIslandParks
             cell.parkNameLabel.text = park.Name
             cell.parkAddressLabel.text = park.Location
             cell.numberOfCourtsLabel.text = park.Num_of_Courts
-            numberOfCourtsToPass = park.Num_of_Courts!
-            parkAddressToPass = park.Location!
-            parkNameToPass = park.Name!
 
         case 4:
-            let park = bronxParks[indexPath.row]
+            park = bronxParks[indexPath.row]
+            selectedBorough = bronxParks
             cell.parkNameLabel.text = park.Name
             cell.parkAddressLabel.text = park.Location
             cell.numberOfCourtsLabel.text = park.Num_of_Courts
-            numberOfCourtsToPass = park.Num_of_Courts!
-            parkAddressToPass = park.Location!
-            parkNameToPass = park.Name!
 
         default:
             break
@@ -167,8 +157,11 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myTableView.deselectRow(at: indexPath, animated: true)
+        //Before performing segue get the current index of the cell
+        self.currentIndex = indexPath.row
         performSegue(withIdentifier:"parkDetailSegue", sender: self)
     }
+    
     
     //MARK: - Configure Custom Segmented Control
     @IBAction func customSegmentedValueChanged(_ sender: CustomSegmentedControl) {
@@ -199,9 +192,9 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "parkDetailSegue" {
             let destination = segue.destination as! ParkDetailViewController
-            destination.numOfCourts = numberOfCourtsToPass
-            destination.parkAddress = parkAddressToPass
-            destination.parkName = parkNameToPass
+            //Have a park variable in ParkDetailViewController
+            //destination.park = self.allParks[currentIndex]
+            destination.park = self.selectedBorough[currentIndex]
         }
     }
     

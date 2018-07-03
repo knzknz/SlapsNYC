@@ -9,9 +9,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    
-    //github test
     
     @IBOutlet var homePageButtons: [UIButton]!
 
