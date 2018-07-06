@@ -27,11 +27,20 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var boroughLabel: UILabel!
     @IBOutlet weak var myTableView: UITableView!
     
+    @IBOutlet weak var boroughImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView.dataSource = self
         myTableView.delegate = self
         myTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
+        
+        
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor.blue
+//        headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 80)
+//        myTableView.tableHeaderView = headerView
 
         loadParkData()
         loadParksByBorough()
@@ -169,18 +178,27 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
         case 0:
             self.view.backgroundColor = .black
             boroughLabel.text = "Queens"
+            boroughImageView.image = UIImage(named: "queens")
+            
         case 1:
             self.view.backgroundColor = UIColor.blue
             boroughLabel.text = "Brooklyn"
+            boroughImageView.image = UIImage(named: "brooklyn")
         case 2:
             self.view.backgroundColor = UIColor.cyan
             boroughLabel.text = "Manhattan"
+            boroughImageView.image = UIImage(named: "manhattan")
+
         case 3:
             self.view.backgroundColor = UIColor.darkGray
             boroughLabel.text = "Staten Island"
+            boroughImageView.image = UIImage(named: "statenisland")
+
         case 4:
             self.view.backgroundColor = UIColor.black
             boroughLabel.text = "Bronx"
+            boroughImageView.image = UIImage(named: "bronx")
+
         default:
             view.backgroundColor = .white
         }
