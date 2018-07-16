@@ -36,6 +36,7 @@ class CustomCards: UIView {
         layer.shadowPath = shadowPath.cgPath
         
         layer.shadowOpacity = shadowOpacity
+        layer.backgroundColor = UIColor.white.cgColor
     }
     
 }

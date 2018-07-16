@@ -35,12 +35,6 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
         myTableView.dataSource = self
         myTableView.delegate = self
         myTableView.separatorColor = UIColor(white: 0.95, alpha: 1)
-        
-        
-//        let headerView = UIView()
-//        headerView.backgroundColor = UIColor.blue
-//        headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 80)
-//        myTableView.tableHeaderView = headerView
 
         loadParkData()
         loadParksByBorough()
@@ -49,6 +43,11 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
 //        for park in allParks {
 //            print(park.Name)
 //        }
+        myTableView.backgroundColor = UIColor.black
+        customSegmentedControl.backgroundColor = UIColor.white
+    
+    
+    self.navigationController?.navigationBar.barTintColor = UIColor.white
     }
     
     func loadParksByBorough() {
@@ -160,7 +159,8 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
             break
         }
         
-        cell.contentView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+//        cell.contentView.backgroundColor = UIColor(white: 0.95, alpha: 1)
+                cell.contentView.backgroundColor = UIColor.clear
         return cell
     }
     
@@ -177,26 +177,26 @@ class FindAParkViewController: UIViewController, UITableViewDelegate, UITableVie
         switch sender.selectedSegmentIndex {
         case 0:
             self.view.backgroundColor = .black
-            boroughLabel.text = "Queens"
+//            boroughLabel.text = "Queens"
             boroughImageView.image = UIImage(named: "queens")
             
         case 1:
             self.view.backgroundColor = UIColor.blue
-            boroughLabel.text = "Brooklyn"
+//            boroughLabel.text = "Brooklyn"
             boroughImageView.image = UIImage(named: "brooklyn")
         case 2:
             self.view.backgroundColor = UIColor.cyan
-            boroughLabel.text = "Manhattan"
+//            boroughLabel.text = "Manhattan"
             boroughImageView.image = UIImage(named: "manhattan")
 
         case 3:
             self.view.backgroundColor = UIColor.darkGray
-            boroughLabel.text = "Staten Island"
-            boroughImageView.image = UIImage(named: "statenisland")
+//            boroughLabel.text = "Staten Island"
+            boroughImageView.image = UIImage(named: "statenIsland")
 
         case 4:
             self.view.backgroundColor = UIColor.black
-            boroughLabel.text = "Bronx"
+//            boroughLabel.text = "Bronx"
             boroughImageView.image = UIImage(named: "bronx")
 
         default:

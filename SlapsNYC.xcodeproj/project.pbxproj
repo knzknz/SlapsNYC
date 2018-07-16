@@ -24,6 +24,7 @@
 		813A107B20C5F4C1001F6912 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A107A20C5F4C1001F6912 /* CustomSegmentedControl.swift */; };
 		813A107D20C5F51D001F6912 /* FindAParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A107C20C5F51D001F6912 /* FindAParkViewController.swift */; };
 		813A108020C5F717001F6912 /* CustomCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A107F20C5F717001F6912 /* CustomCards.swift */; };
+		81B99C4820F176BF002E331B /* TournamentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B99C4720F176BF002E331B /* TournamentVC.swift */; };
 		81F294DC20D2055C0095241E /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F294DB20D2055C0095241E /* ParkDetailViewController.swift */; };
 		81F294DE20D2058A0095241E /* TournamentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F294DD20D2058A0095241E /* TournamentDetailViewController.swift */; };
 		9D263E575328CB84DA5C7472 /* Pods_SlapsNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0498EB76F72AF8C5C4BBDB4E /* Pods_SlapsNYC.framework */; };
@@ -74,6 +75,7 @@
 		813A107A20C5F4C1001F6912 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		813A107C20C5F51D001F6912 /* FindAParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAParkViewController.swift; sourceTree = "<group>"; };
 		813A107F20C5F717001F6912 /* CustomCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCards.swift; sourceTree = "<group>"; };
+		81B99C4720F176BF002E331B /* TournamentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentVC.swift; sourceTree = "<group>"; };
 		81F294DB20D2055C0095241E /* ParkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
 		81F294DD20D2058A0095241E /* TournamentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailViewController.swift; sourceTree = "<group>"; };
 		9A33BF07FBF52EBDEB29E361 /* Pods_SlapsNYCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlapsNYCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				813A107C20C5F51D001F6912 /* FindAParkViewController.swift */,
 				81F294DB20D2055C0095241E /* ParkDetailViewController.swift */,
 				81F294DD20D2058A0095241E /* TournamentDetailViewController.swift */,
+				81B99C4720F176BF002E331B /* TournamentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				8117120620E0A7030063BBFD /* UIColorExt.swift in Sources */,
 				813A107D20C5F51D001F6912 /* FindAParkViewController.swift in Sources */,
 				810469BA20DC52A700C61288 /* Parks.swift in Sources */,
+				81B99C4820F176BF002E331B /* TournamentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
