@@ -12,3 +12,8 @@ An app that facilitates finding handball courts and creating tournaments
 
 ## Expected Release
 SlapsNYC is expected to be in the app store late summer 2018
+
+## Requirements
+- iOS 8.0+ / Mac OS X 10.11+ / tvOS 9.0+
+- Xcode 9.0+
+- Swift 4.0+
